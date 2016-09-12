@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Homework 1</title>
+	<style>
+		p {
+			text-align: center;
+		}
+		.cat{
+			display: block;
+			margin: 0 auto;
+			
+		}
+
+		img{
+			width: 200px;
+			height: auto;
+		}
+		.breed {
+			text-align: center;
+			display: none;
+		}
+
+	
+
+		.breed {
+			text-align: center;
+			display: none;
+		}
+
+		body{
+			background-color: lightblue;
+			font-weight: bold;
+			font-family: Arial, Helvetica, sans-serif;
+			color:white;
+			font-size: 200%
+		}
+
+		
+	</style>
+	<script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.4/jquery.min.js"></script>
+</head>
+<body>
+<p class="name">Yuening Bai</p>
+<p>Click the Cat to see the breed name</p>
+
+<img class="cat" src="cat.jpg"></img>
+
+<div class="breed">
+	Ragdoll
+</div>
+
+
+<script type="text/javascript">
+	$('.cat').click(function() {
+		$('.breed').toggle();
+	});
+</script>
+
+</body>
+</html>
